@@ -33,7 +33,7 @@ module Program =
 
             let paint =
                 new SKPaint(
-                    Color = SKColors.Orange,
+                    Color = SKColors.SlateBlue,
                     IsAntialias = true,
                     Style = SKPaintStyle.Fill,
                     TextAlign = SKTextAlign.Center,
@@ -43,7 +43,7 @@ module Program =
             let skPoint =
                 SKPoint(x = float32 (info.Width / 2), y = float32 ((info.Height + int (paint.TextSize)) / 2))
 
-            canvas.DrawText("SkiaSharp on .NET Core with GTK#", skPoint, paint))
+            canvas.DrawText("SkiaSharp on GTK# on .NET Core", skPoint, paint))
 
         win.Add(skiaDraw)
         win.Child.ShowAll()
